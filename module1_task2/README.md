@@ -13,3 +13,4 @@ In this project we use the following commands using a makefile to construct the 
 - build: Generate the website from the markdown and configuration files in a given directory.
 - clean: Clean all the content from the directory where the website was generated.
 - post: Create a new blog post whose filename and title come from enviroment variables.
+- help: Show the makefile targets and the description of what the task that perform each one.
