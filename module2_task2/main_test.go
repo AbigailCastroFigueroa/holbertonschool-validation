@@ -39,7 +39,7 @@ func Test_HelloHandler(t *testing.T) {
 	},
 	{
 	  name:        "two parameters",
-	  queryString: "name=Marylin&name=Abigail",
+	  queryString: "name=Abigail&name=Marylin",
 	  responseCode: 200,
 	  body: 		"Hello Marylin!",
 	},
