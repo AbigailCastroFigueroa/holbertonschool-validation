@@ -4,7 +4,7 @@ help:  ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 build: ## Compile the source code of the application to binary. 
-	golangci-lint run 
+	make lint
 	go build -o awesome-api
 
 run:  ## Execute binary in the background and write logs into a given file.
@@ -22,4 +22,4 @@ test: ## Test if the website behaves as expected.
 	curl http://localhost:9999/health
 
 lint: ## Verify for errors.
-	golangci-lint run
+	golangci-lint run ./main.go
