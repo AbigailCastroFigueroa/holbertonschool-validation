@@ -10,7 +10,6 @@ run:  ## Execute binary in the background and write logs into a given file.
 	./awesome-api>./awesome-api.log 2>&1 &
 
 clean: ## Stop the application and delete the binary files created.
-	make stop
 	rm -f awesome-api awesome-api.log
 
 stop: ## Stop the application.
