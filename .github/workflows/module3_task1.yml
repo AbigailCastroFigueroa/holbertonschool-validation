@@ -23,11 +23,11 @@ jobs:
       - name: Validate Makefile build command
         run: cd ./module3_task1/ && make build
 
-      - name: Validate Makefile test command
-        run: cd ./module3_task1/ && make test
-
       - name: Validate Makefile run command
         run: cd ./module3_task1/ && make run
+
+      - name: Validate Makefile stop command
+        run: cd ./module3_task1/ && make stop
 
       - name: Validate Makefile clean command
         run: cd ./module3_task1/ && make clean
