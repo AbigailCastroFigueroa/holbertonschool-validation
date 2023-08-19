@@ -18,7 +18,7 @@ jobs:
         run: cd ./module3_task1/ && make help
 
       - name: setup
-        run: cd ./module3_task1/ && ./setup.sh
+        run: cd ./module3_task1/ &&  sudo ./setup.sh
 
       - name: Validate Makefile build command
         run: cd ./module3_task1/ && make build
