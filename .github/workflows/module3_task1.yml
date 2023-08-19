@@ -1,3 +1,4 @@
+---
 name: module3_task1
 on:
   push:
@@ -11,11 +12,25 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Validate Makefile
+      - name: Validate Makefile help command
         run: cd ./module3_task1/ && make help
 
-      - name: Validate Makefile
+      - name: setup
+        run: cd ./module3_task1/ && ./setup.sh
+
+      - name: Validate Makefile build command
         run: cd ./module3_task1/ && make build
-        
+
+      - name: Validate Makefile lint command
+        run: cd ./module3_task1/ && make lint
+
+      - name: Validate Makefile run command
+        run: cd ./module3_task1/ && make run
+
+      - name: Validate Makefile clean command
+        run: cd ./module3_task1/ && make clean
+
+      - name: Validate Makefile test command
+        run: cd ./module3_task1/ && make test
